@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+{% load static %}
+<!--
+Template Name: Mudcappro
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Movie-Station | New Releases</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="{% url 'homelink' %}">Movie-Station</a></h1>
+    </div>
+    <div id="quickinfo" class="fl_right">
+      <ul class="nospace inline">
+        <!--<li><strong>Lobortis:</strong><br>-->
+          <!--+00 (123) 456 7890</li>-->
+        <!--<li><strong>Tincidunt:</strong><br>-->
+          <!--+00 (123) 456 7890</li>-->
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/home/starwars.jpg' %}');">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row2">
+    <nav id="mainav" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="{% url 'homelink' %}" style="color:white">Home</a></li>
+        <li><a class="drop" href="{% url 'reviewlink' %}">My Account</a>
+          <ul>
+            <li><a href="{% url 'profilelink' %}">Profile</a></li>
+            <li><a href="{% url 'reviewlink' %}">Reviews</a></li>
+            <!--<li><a href="pages/sidebar-left.html">Sidebar Left</a></li>-->
+            <!--<li><a href="pages/sidebar-right.html">Sidebar Right</a></li>-->
+            <li><a href="{% url 'ratedmovielink' %}">Movies Rated</a></li>
+          </ul>
+        </li>
+        <!--<li><a class="drop" href="#">Dropdown</a>-->
+          <!--<ul>-->
+            <!--<li><a href="#">Level 2</a></li>-->
+            <!--<li><a class="drop" href="#">Level 2 + Drop</a>-->
+              <!--<ul>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+              <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#">Level 2</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <li><a href="{% url 'ratelink' %}">Rate Movies</a></li>
+        <li><a href="{% url 'releaselink' %}">Upcoming Releases</a></li>
+        <!--<li><a href="#">Top </a></li>-->
+        <!--<li><a href="#">Contact</a></li>-->
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <section id="breadcrumb" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <ul>
+      <!--<li><a href="#">Home</a></li>-->
+      <!--<li><a href="#">Lorem</a></li>-->
+      <!--<li><a href="#">Ipsum</a></li>-->
+      <!--<li><a href="#">Dolor</a></li>-->
+    </ul>
+    <!-- ################################################################################################ -->
+    <h6 class="heading">New Release</h6>
+    <!-- ################################################################################################ -->
+  </section>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content">
+      <!-- ################################################################################################ -->
+      <h1>upcoming...</h1>
+      <div class="group elements">
+        <article class="one_third first">
+          <figure><a href="https://www.marvel.com/movies/avengers-endgame"><img src="{% static 'images/newrelease/endgamep.jpg' %}" alt=""></a>
+            <figcaption>
+              <time datetime="2045-04-26T08:15+00:00"><strong>26</strong> <em>Apr</em></time>
+            </figcaption>
+          </figure>
+          <div class="txtwrap">
+            <h4 class="heading">Avengers: Endgame</h4>
+            <ul class="nospace meta">
+              <!--<li>by <a href="#">Admin</a></li>-->
+              <!--<li>in <a href="#">Category Name</a></li>-->
+            </ul>
+            <p>Avengers: Endgame release date is set for Friday, April 26, 2019. This will be a Nationwide in theaters release.<br><br></p>
+            <footer><a href="https://www.marvel.com/movies/avengers-endgame">Read More &raquo;</a></footer>
+          </div>
+        </article>
+        <article class="one_third">
+          <figure><a href="https://www.sonypictures.com/movies/theintruder"><img src="{% static 'images/newrelease/intruder.jpg' %}" alt="intruder" style="height:447px;width:100%"></a>
+            <figcaption>
+              <time datetime="2045-04-26T08:15+00:00"><strong>3</strong> <em>May</em></time>
+            </figcaption>
+          </figure>
+          <div class="txtwrap">
+            <h4 class="heading">The Intruder</h4>
+            <ul class="nospace meta">
+              <!--<li>by <a href="#">Admin</a></li>-->
+              <!--<li>in <a href="#">Category Name</a></li>-->
+            </ul>
+            <p>AThe Intruder release date is set for Friday, May 3, 2019. This will be a Nationwide in theaters release. <br><br><br></p>
+            <footer><a href="https://www.sonypictures.com/movies/theintruder">Read More &raquo;</a></footer>
+          </div>
+        </article>
+        <article class="one_third">
+          <figure><a href="https://www.detectivepikachumovie.com/"><img src="{% static 'images/newrelease/pikachu.jpg' %}" alt="pikachu" style="height:447px;"></a>
+            <figcaption>
+              <time datetime="2045-05-31T08:15+00:00"><strong>10</strong> <em>May</em></time>
+            </figcaption>
+          </figure>
+          <div class="txtwrap">
+            <h4 class="heading">Detective Pikachu</h4>
+            <ul class="nospace meta">
+              <!--<li>by <a href="#">Admin</a></li>-->
+              <!--<li>in <a href="#">Category Name</a></li>-->
+            </ul>
+            <p>POKÉMON Detective Pikachu release date is set for Friday, May 10, 2019. This will be a Nationwide in theaters release.<br><br> </p>
+            <footer><a href="https://www.detectivepikachumovie.com/">Read More &raquo;</a></footer>
+          </div>
+        </article>
+    </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!--2-->
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content">
+      <!-- ################################################################################################ -->
+      <!--<h1>upcoming...</h1>-->
+        <div class="group elements">
+      <article class="one_third first">
+        <figure><a href="http://www.foxsearchlight.com/tolkien/"><img src="{% static 'images/newrelease/tolkin.jpg' %}" alt="tolkin" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-04-19T08:15+00:00"><strong>10</strong> <em>May</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Tolkien</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Tolkien release date is set for Friday, May 10, 2019. This will be a Nationwide in theaters release.<br><br> </p>
+          <footer><a href="http://www.foxsearchlight.com/tolkien/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="https://www.johnwick.movie/"><img src="{% static 'images/newrelease/johnwick.png' %}" alt="johnwick" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-04-26T08:15+00:00"><strong>17</strong> <em>May</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">John Wick: Chapter 3</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>John Wick: Chapter 3 - Parabellum release date is set for Friday, May 17, 2019. This will be a Nationwide in theaters release.</p>
+          <footer><a href="https://www.johnwick.movie/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="https://movies.disney.com/aladdin-2019"><img src="{% static 'images/newrelease/aladin.jpg' %}" alt="aladin" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-05-31T08:15+00:00"><strong>24</strong> <em>May</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Aladdin</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Aladdin release date is set for Friday, May 24, 2019. This will be a Nationwide in theaters release. <br><br> </p>
+          <footer><a href="https://movies.disney.com/aladdin-2019">Read More &raquo;</a></footer>
+        </div>
+      </article>
+    </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!--3-->
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content">
+      <!-- ################################################################################################ -->
+      <!--<h1>upcoming...</h1>-->
+        <div class="group elements">
+      <article class="one_third first">
+        <figure><a href="https://www.godzillamovie.com/"><img src="{% static 'images/newrelease/godzilla.jpg' %}" alt="godzila" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-04-19T08:15+00:00"><strong>31</strong> <em>May</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Godzilla: King of the Monsters</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Godzilla: King of the Monsters release date is set for Friday, May 31, 2019. This will be a Nationwide in theaters release.<br><br> </p>
+          <footer><a href="https://www.godzillamovie.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+
+      <article class="one_third">
+        <figure><a href="https://www.foxmovies.com/movies/dark-phoenix"><img src="{% static 'images/newrelease/pheonix.jpg' %}" alt="darkpheonix" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-04-26T08:15+00:00"><strong>07</strong> <em>Jun</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">X-Men: Dark Phoenix</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>X-Men: Dark Phoenix release date is set for Friday, June 7, 2019. This will be a Nationwide in theaters release.&nbsp &nbsp &nbsp<br><br><br></p>
+          <footer><a href="https://www.foxmovies.com/movies/dark-phoenix">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="https://www.shaftmovie.com/"><img src="{% static 'images/newrelease/shaft.jpg' %}" alt="shaft" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-05-31T08:15+00:00"><strong>14</strong> <em>June</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Shaft</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Shaft release date is set for Friday, June 14, 2019. This will be a Nationwide in theaters release.<br><br> <br><br> </p>
+          <footer><a href="https://www.shaftmovie.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+    </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!--4-->
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content">
+      <!-- ################################################################################################ -->
+      <!--<h1>upcoming...</h1>-->
+        <div class="group elements">
+      <article class="one_third first">
+        <figure><a href="https://www.pixar.com/feature-films-toy-story-4"><img src="{% static 'images/newrelease/toystory.jpg' %}" alt="toystory" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-04-19T08:15+00:00"><strong>21</strong> <em>Jun</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Toy Story 4</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Toy Story 4 release date is set for Friday, June 21, 2019. This will be a Nationwide in theaters release. <br><br><br> </p>
+          <footer><a href="https://www.pixar.com/feature-films-toy-story-4">Read More &raquo;</a></footer>
+        </div>
+      </article>
+
+      <article class="one_third">
+        <figure><a href="https://bestbuddi.com/"><img src="{% static 'images/newrelease/childplay.jpg' %}" alt="childplay" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-04-26T08:15+00:00"><strong>21</strong> <em>Jun</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Child's Play</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Child's Play release date is set for Friday, June 21, 2019. This will be a Nationwide in theaters release. <br><br><br></p>
+          <footer><a href="https://bestbuddi.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+
+      <article class="one_third">
+        <figure><a href="https://www.annabellemovie.com/"><img src="{% static 'images/newrelease/anabela.jpg' %}" alt="anabela" style="height:447px;width:100%"></a>
+          <figcaption>
+            <time datetime="2045-05-31T08:15+00:00"><strong>28</strong> <em>June</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Annabelle</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Annabelle Comes Home release date is set for Friday, June 28, 2019. This will be a Nationwide in theaters release.<br><br> </p>
+          <footer><a href=https://www.annabellemovie.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+    </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Footer Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/welcome/bvs.jpg' %}');background-repeat: no-repeat;
+  background-size: 100% 800px;">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <div class="one_quarter first">
+        <h6 class="heading">movie-station</h6>
+        <p>Discover top rated and trending movies.</p>
+        <!--<p>Aliquam suspendisse elit quisque et cursus nulla aenean tincidunt massa condimentum.</p>-->
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Social</h6>
+        <nav>
+          <ul class="nospace">
+            <li><a href="{% url 'homelink' %}"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="{% url 'homelink' %}">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Terms</a></li>
+            <li><a href="https://www.cbsinteractive.com/legal/cbsi/privacy-policy/highlights">Privacy</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Cookies</a></li>
+            <li><a href="https://www.amazon.com/b/?&node=5160028011">Disclaimer</a></li>
+          </ul>
+        </nav>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-dribble" href="https://in.pinterest.com/"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="faicon-linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-google-plus" href="https://aboutme.google.com/u/0/"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="faicon-vk" href="https://vk.com/"><i class="fa fa-vk"></i></a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Formation</h6>
+        <article>
+          <h2 class="nospace font-x1"><a href="{% url 'homelink' %}">Movie-Station</a></h2>
+          <time class="font-xs" datetime="2019-04-16">Tuesday, 16<sup>th</sup> April 2019</time>
+          <p>Found in 2019 for Providing Informations From the Filmverse.</p>
+        </article>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Other Links</h6>
+        <ul class="nospace linklist">
+          <li><a href="https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating,desc">IMDb "Top 250" Movies</a></li>
+          <li><a href="https://www.imdb.com/search/title?num_votes=100000,&sort=user_rating,desc&title_type=tv_series&">IMDb Top Rated TV Series</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/world/">All Time Biggest Grosser in Box Office</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/weekends/">First Weekend Box Office</a></li>
+        </ul>
+      </div>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - <a href="{% url 'homelink' %}">Movie-Station</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Footer Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>

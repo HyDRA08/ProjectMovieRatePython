@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+{% load static %}
+<!--
+Template Name: Mudcappro
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Movie-Station | Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+/* DEMO ONLY */
+.container .demo{text-align:center;}
+.container .demo div{padding:8px 0;}
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+/* DEMO ONLY */
+.bgdedoverlay{
+  background-image: url("{% static 'images/welcome/bvs.jpg' %}");
+  background-repeat: no-repeat;
+  background-size: 100% 800px;
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="{% url 'homelink' %}">Movie-Station</a></h1>
+    </div>
+    <div id="quickinfo" class="fl_right">
+      <ul class="nospace inline">
+        <li><a href="{% url 'signoutlink'  %}"><strong>Sign out</strong></a></li>
+        <!--<li><strong>Tincidunt:</strong><br>-->
+          <!--+00 (123) 456 7890</li>-->
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/home/starwars.jpg' %}');">
+
+  <!-- ################################################################################################ -->
+   <div class="wrapper row2">
+    <nav id="mainav" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="{% url 'homelink' %}" style="color:white">Home</a></li>
+        <li><a class="drop" href="{% url 'profilelink' %}">My Account</a>
+          <ul>
+            <li><a href="{% url 'profilelink' %}">Profile</a></li>
+            <li><a href="{% url 'reviewlink' %}">Reviews</a></li>
+            <li><a href="{% url 'ratedmovielink' %}">Movies Rated</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'ratelink' %}">Rate Movies</a></li>
+        <li><a href="{% url 'releaselink' %}">Upcoming Releases</a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <section id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+    </ul>
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Profile</h6>
+    <!-- ################################################################################################ -->
+  </section>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h2>Hai : {{profname}}<h2>
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50 demo">
+        <div class="one_half first" style="background-color:red;">{{profname}}</div>
+        <div class="one_half">{{modelsignup1.name}}</div>
+      </div>
+      <!-- ################################################################################################ -->
+      <h2>Recommended For You</h2>
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50 demo">
+        <div class="one_quarter first" style="background-color:white;"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x_masonry/avengersendgame_lob_crd_05_1.jpg" alt="img" style="width:100%;height:350px;"></div>
+        <div class="one_quarter" style="background-color:white;"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/captainmarvel_lob_crd_06.jpg" style="width:100%;height:350px;"></div>
+        <div class="one_quarter" style="background-color:white;"><img src="https://images-na.ssl-images-amazon.com/images/I/71iOROsGC3L._RI_SX300_.jpg" style="width:100%;height:350px;"></div>
+        <div class="one_quarter" style="background-color:white;"><img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/movie-covers/2018/11/Movies-Thumb_Aquaman2018_single_5bedc81a90d565.98093378.jpg?itok=P5r4seYP" style="width:100%;height:350px;"></div>
+      </div>
+      <div class="group btmspace-50 demo">
+        <div class="one_quarter first" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_QL50_.jpg" style="width:100%;height:350px;"></div>
+        <div class="one_quarter" style="background-color:white;"><img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/movie-covers/2017/11/KeyarJL_TheLeague_Keyart_5a206235e32cc1.07186227.jpg?itok=gafZoYeU" style="width:100%;height:350px;"></div>
+        <div class="two_quarter" style="background-color:white;"><img src="https://www.thebeaverton.com/wp-content/uploads/2018/07/mission-impossible-fallout.jpg" style="width:100%;height:350px;"></div>
+      </div>
+      <!-- ################################################################################################ -->
+      <h2>Top Rated Movies Ever IMDb</h2>
+      <!-- ################################################################################################ -->
+      <div class="group btmspace-50 demo">
+        <div class="one_third first" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg" style="width:100%;height:400px;"></div>
+        <div class="one_third" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL50_SY1000_CR0,0,704,1000_AL_.jpg" style="width:100%;height:400px;"></div>
+        <div class="one_third" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL50_SY1000_CR0,0,675,1000_AL_.jpg" style="width:100%;height:400px;"></div>
+      </div>
+      <div class="group demo">
+        <div class="one_third first" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL50_SY1000_CR0,0,701,1000_AL_.jpg" style="width:100%;height:400px;"></div>
+        <div class="one_third" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL50_SY1000_CR0,0,675,1000_AL_.jpg" style="width:100%;height:400px;"></div>
+        <div class="one_third" style="background-color:white;"><img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL50_SY1000_CR0,0,686,1000_AL_.jpg" style="width:100%;height:400px;"></div>
+
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Footer Background Image Wrapper -->
+<div class="bgdedoverlay">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <div class="one_quarter first">
+        <h6 class="heading">movie-station</h6>
+        <p>Discover top rated and trending movies.</p>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Social</h6>
+        <nav>
+          <ul class="nospace">
+            <li><a href="{% url 'homelink' %}"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="{% url 'homelink' %}">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Terms</a></li>
+            <li><a href="https://www.cbsinteractive.com/legal/cbsi/privacy-policy/highlights">Privacy</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Cookies</a></li>
+            <li><a href="https://www.amazon.com/b/?&node=5160028011">Disclaimer</a></li>
+          </ul>
+        </nav>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-dribble" href="https://in.pinterest.com/"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="faicon-linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-google-plus" href="https://aboutme.google.com/u/0/"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="faicon-vk" href="https://vk.com/"><i class="fa fa-vk"></i></a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Formation</h6>
+        <article>
+          <h2 class="nospace font-x1"><a href="{% url 'homelink' %}">Movie-Station</a></h2>
+          <time class="font-xs" datetime="2019-04-16">Tuesday, 16<sup>th</sup> April 2019</time>
+          <p>Found in 2019 for Providing Informations From the Filmverse.</p>
+        </article>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Other Links</h6>
+        <ul class="nospace linklist">
+          <li><a href="https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating,desc">IMDb "Top 250" Movies</a></li>
+          <li><a href="https://www.imdb.com/search/title?num_votes=100000,&sort=user_rating,desc&title_type=tv_series&">IMDb Top Rated TV Series</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/world/">All Time Biggest Grosser in Box Office</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/weekends/">First Weekend Box Office</a></li>
+        </ul>
+      </div>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - <a href="{% url 'homelink' %}">Movie-Station</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Footer Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>

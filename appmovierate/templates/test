@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+{% load static %}
+<!--
+Template Name: Mudcappro
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Movie-Station | Reviews</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="{% url 'homelink' %}">Movie-Station</a></h1>
+    </div>
+    <div id="quickinfo" class="fl_right">
+      <ul class="nospace inline">
+        <!--<li><strong>Lobortis:</strong><br>-->
+          <!--+00 (123) 456 7890</li>-->
+        <!--<li><strong>Tincidunt:</strong><br>-->
+          <!--+00 (123) 456 7890</li>-->
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/home/starwars.jpg' %}');">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row2">
+    <nav id="mainav" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="{% url 'homelink' %}" style="color:white">Home</a></li>
+        <li><a class="drop" href="{% url 'reviewlink' %}">My Account</a>
+          <ul>
+            <li><a href="{% url 'profilelink' %}">Profile</a></li>
+            <li><a href="{% url 'reviewlink' %}">Reviews</a></li>
+            <!--<li><a href="pages/sidebar-left.html">Sidebar Left</a></li>-->
+            <!--<li><a href="pages/sidebar-right.html">Sidebar Right</a></li>-->
+            <li><a href="{% url 'ratedmovielink' %}">Movies Rated</a></li>
+          </ul>
+        </li>
+        <!--<li><a class="drop" href="#">Dropdown</a>-->
+          <!--<ul>-->
+            <!--<li><a href="#">Level 2</a></li>-->
+            <!--<li><a class="drop" href="#">Level 2 + Drop</a>-->
+              <!--<ul>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+              <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#">Level 2</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <li><a href="{% url 'ratelink' %}">Rate Movies</a></li>
+        <li><a href="#">Upcoming Releases</a></li>
+        <!--<li><a href="#">Top </a></li>-->
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <section id="breadcrumb" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <ul>
+      <!--<li><a href="#">Home</a></li>-->
+      <!--<li><a href="#">Lorem</a></li>-->
+      <!--<li><a href="#">Ipsum</a></li>-->
+      <!--<li><a href="#">Dolor</a></li>-->
+    </ul>
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Reviews</h6>
+    <!-- ################################################################################################ -->
+  </section>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content">
+      <!-- ################################################################################################ -->
+      <h1>WARNING!!! (RULES)</h1>
+      <img class="imgr borderedbox inspace-5" src="{% static 'images/demo/alert.jpg' %}" alt="">
+      <p>Thank you for contributing your time, thoughts, and energy to Film & History! Your film review will be read by a broad-reaching community of scholars, practitioners, and students across a number of disciplines, all sharing a common interest in the ways the film and television intersect with, shape, and reflect, society.</p>
+      <p>With that in mind, these brief guidelines are designed to be of assistance as you begin to craft your submission.</p>
+      <!--<img class="imgl borderedbox inspace-5" src="{% static 'images/demo/dodont.png' %}" alt=""><br>-->
+      <p>Content</p>
+      <p>1. Please keep your audience, and their interests, in mind. Our primary concern is to examine and analyze films in their various relationships with society and history. How is a given film an artifact of the historical moment in which it was conceived and produced? How does the film reflect the attitudes, values, events, opportunities, and pressures of that era – or of the era on which it’s focused? What role does this film play in shaping or reflecting the attitudes and perceptions of audiences at the time of its release? How does this film relate to the body of cinematic (or televisual) texts on its subject? Is the filmmaker’s agenda (political, intellectual, or otherwise) apparent, either as text or subtext in the film? Is the film significant in that it presents a unique, previously unheard, or marginalized perspective not present in the body of available films?</p>
+      <p>2. To whom would this film be of use? Scholars? General audiences? Would it be of use in the classroom? Are you aware of similar films which would be more useful, or useful in tandem (adding an opposing perspective, additional background, missing information)?</p>
+      <!--<h1>Table(s)</h1>-->
+      <!--<div class="scrollable">-->
+        <!--<table>-->
+          <!--<thead>-->
+            <!--<tr>-->
+              <!--<th>Header 1</th>-->
+              <!--<th>Header 2</th>-->
+              <!--<th>Header 3</th>-->
+              <!--<th>Header 4</th>-->
+            <!--</tr>-->
+          <!--</thead>-->
+          <!--<tbody>-->
+            <!--<tr>-->
+              <!--<td><a href="#">Value 1</a></td>-->
+              <!--<td>Value 2</td>-->
+              <!--<td>Value 3</td>-->
+              <!--<td>Value 4</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td>Value 5</td>-->
+              <!--<td>Value 6</td>-->
+              <!--<td>Value 7</td>-->
+              <!--<td><a href="#">Value 8</a></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td>Value 9</td>-->
+              <!--<td>Value 10</td>-->
+              <!--<td>Value 11</td>-->
+              <!--<td>Value 12</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+              <!--<td>Value 13</td>-->
+              <!--<td><a href="#">Value 14</a></td>-->
+              <!--<td>Value 15</td>-->
+              <!--<td>Value 16</td>-->
+            <!--</tr>-->
+          <!--</tbody>-->
+        <!--</table>-->
+      <!--</div>-->
+      <div id="comments">
+        <h2>Recent Reviews Posted </h2>
+        <ul>
+          <!--<li>-->
+            <!--<article>-->
+              <!--<header>-->
+                <!--<figure class="avatar"><img src="../images/demo/avatar.png" ></figure>-->
+                <!--<address>-->
+                <!--By <a href="{% url 'profilelink' %}">{{profname}}</a>-->
+                <!--</address>-->
+                <!--<time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>-->
+              <!--</header>-->
+              <!--<div class="comcont">-->
+                <!--<p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>-->
+              <!--</div>-->
+            <!--</article>-->
+          <!--</li>-->
+          <!--{% for i in modelrating1 %}-->
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" ></figure>
+                <address>
+                By <a href="{% url 'profilelink' %}">{{profname}}</a>
+                </address>
+                                  <p>{{modelrating1}}</p>
+
+              </header>
+              <div class="comcont">
+
+                <!--{% for i in modelrating1 %}-->
+                  <!--<p>{{i.movie_name}}</p>-->
+                  <!--<p>{{i.date}}</p>-->
+                  <!--<p>{{i.review}}</p>-->
+                  <!--<p>&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
+                  <!--&lt;!&ndash;<p>{{i.movie_name}}</p>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<p>{{i.date}}</p>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<p>{{i.review}}</p>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<p>&#45;&#45;&#45;&#45;&#45;&#45;</p>&ndash;&gt;-->
+                <!--{% endfor %}-->
+              </div>
+            </article>
+          </li>
+          <!--{% endfor %}-->
+          <!--<li>-->
+            <!--<article>-->
+              <!--<header>-->
+                <!--<figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>-->
+                <!--<address>-->
+                <!--By <a href="{% url 'profilelink' %}">{{profname}}</a>-->
+                <!--</address>-->
+                <!--<time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>-->
+              <!--</header>-->
+              <!--<div class="comcont">-->
+                <!--<p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>-->
+              <!--</div>-->
+            <!--</article>-->
+          <!--</li>-->
+        </ul>
+
+        <!--<h2>Write A Review</h2>-->
+        <!--<form action="#" method="post">-->
+          <!--<div class="one_third first">-->
+            <!--<label for="name">Name <span>*</span></label>-->
+            <!--<input type="text" name="name" id="name" value="" size="22" required>-->
+          <!--</div>-->
+          <!--<div class="one_third">-->
+            <!--<label for="email">Mail <span>*</span></label>-->
+            <!--<input type="email" name="email" id="email" value="" size="22" required>-->
+          <!--</div>-->
+          <!--<div class="one_third">-->
+            <!--<label for="url">Website</label>-->
+            <!--<input type="url" name="url" id="url" value="" size="22">-->
+          <!--</div>-->
+          <!--<div class="block clear">-->
+            <!--<label for="comment">Your Comment</label>-->
+            <!--<textarea name="comment" id="comment" cols="25" rows="10"></textarea>-->
+          <!--</div>-->
+          <!--<div>-->
+            <!--<input type="submit" name="submit" value="Submit Form">-->
+            <!--&nbsp;-->
+            <!--<input type="reset" name="reset" value="Reset Form">-->
+          <!--</div>-->
+        <!--</form>-->
+      <!--</div>-->
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Footer Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/welcome/bvs.jpg' %}');background-repeat: no-repeat;
+  background-size: 100% 800px;">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <div class="one_quarter first">
+        <h6 class="heading">movie-station</h6>
+        <p>Discover top rated and trending movies.</p>
+        <!--<p>Aliquam suspendisse elit quisque et cursus nulla aenean tincidunt massa condimentum.</p>-->
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Social</h6>
+        <nav>
+          <ul class="nospace">
+            <li><a href="{% url 'homelink' %}"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="{% url 'homelink' %}">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Terms</a></li>
+            <li><a href="https://www.cbsinteractive.com/legal/cbsi/privacy-policy/highlights">Privacy</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Cookies</a></li>
+            <li><a href="https://www.amazon.com/b/?&node=5160028011">Disclaimer</a></li>
+          </ul>
+        </nav>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-dribble" href="https://in.pinterest.com/"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="faicon-linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-google-plus" href="https://aboutme.google.com/u/0/"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="faicon-vk" href="https://vk.com/"><i class="fa fa-vk"></i></a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Formation</h6>
+        <article>
+          <h2 class="nospace font-x1"><a href="{% url 'homelink' %}">Movie-Station</a></h2>
+          <time class="font-xs" datetime="2019-04-16">Tuesday, 16<sup>th</sup> April 2019</time>
+          <p>Found in 2019 for Providing Informations From the Filmverse.</p>
+        </article>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Other Links</h6>
+        <ul class="nospace linklist">
+          <li><a href="https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating,desc">IMDb "Top 250" Movies</a></li>
+          <li><a href="https://www.imdb.com/search/title?num_votes=100000,&sort=user_rating,desc&title_type=tv_series&">IMDb Top Rated TV Series</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/world/">All Time Biggest Grosser in Box Office</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/weekends/">First Weekend Box Office</a></li>
+        </ul>
+      </div>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - <a href="{% url 'homelink' %}">Movie-Station</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Footer Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>

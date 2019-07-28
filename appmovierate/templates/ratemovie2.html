@@ -1,0 +1,52 @@
+{% extends 'ratemovie.html' %}
+{% load static %}
+{% block output %}
+
+
+            <article class="one_third first" >
+            <figure>
+                <img src="{{temp_name.movie_image.url}}" width="100px" height="100px" alt="img">
+            </figure>
+            <div class="txtwrap">
+              <h4 class="heading">{{temp_name.movie_name}}</h4>
+              <h4 class="heading">{{temp_name.movie_year}}</h4>
+              <ul class="nospace meta">
+              </ul>
+              <p>{{temp_name.movie_director}}</p>
+              <footer>{{temp_name.movie_studio}}</footer>
+            </div>
+            </article>
+
+            <article class="one_third" style="width:50%;">
+                <div class="txtwrap" style="width:150%;">
+                    <p>
+                        <form method="POST" action="{% url 'rate2link' %}" enctype="multipart/form-data" class="form_chose">
+                        {% csrf_token %}
+                            <table>
+                            <tr>
+                                <td>Rate<span style="font-weight:2px;">(1-10)</span></td>
+                                <td>{{ratinghold1.ratings}}</td>
+                            </tr>
+                            <tr>
+                                <td>Review</td>
+                                <td>{{ratinghold1.review}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" id="submit1"></td>
+                            </tr>
+                            </table>
+                        </form>
+                    </p>
+              </div>
+            </article>
+
+
+{% endblock %}
+
+<!--#####################################################################################################-->
+<!--#####################################################################################################-->
+<!--#####################################################################################################-->
+<!--#####################################################################################################-->
+<!--#####################################################################################################-->
+<!--#####################################################################################################-->
+

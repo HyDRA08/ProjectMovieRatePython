@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+{% load static %}
+<!--
+Template Name: Mudcappro
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Movie-Station</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!--"{% static 'css/orkut.css' %}"-->
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<!--<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">-->
+<!--yemptemp-->
+<style>
+  .imglogo{
+    width:100%;
+  }
+  }
+</style>
+</head>
+<body id="top" >
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1" >
+  <header id="header" class="hoc clear" >
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left" >
+      <h1><a href="{% url 'homelink' %}">Movie-Station</a></h1>
+    </div>
+    <!--<div id="quickinfo" class="fl_right">-->
+      <!--<ul class="nospace inline">-->
+        <!--<li>-->
+          <!--<strong><a href="{% url 'login' %">Login</a></strong><br>-->
+    	<!--</li>-->
+        <!--<li>-->
+        	<!--<strong><a href="{% url 'signup' %">Sign Up</a></strong><br>-->
+        <!--</li>-->
+<!---->
+      <!--</ul>-->
+    <!--</div>-->
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/home/avatar2.jpg' %}');background-repeat: no-repeat;
+  background-size: 100% 800px;">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row2">
+    <nav id="mainav" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="{% url 'homelink' %}" style="color:white">Home</a></li>
+        <li><a class="drop" href="">My Account</a>
+          <ul>
+
+            <li><a href="{% url 'profilelink' %}">Profile</a></li>
+            <li><a href="{% url 'reviewlink' %}">Reviews</a></li>
+            <!--<li><a href="pages/sidebar-left.html">Sidebar Left</a></li>-->
+            <!--<li><a href="pages/sidebar-right.html">Sidebar Right</a></li>-->
+            <li><a href="{% url 'ratedmovielink' %}">Movies Rated</a></li>
+          </ul>
+        </li>
+        <!--<li><a class="drop" href="#">Dropdown</a>-->
+          <!--<ul>-->
+            <!--<li><a href="#">Level 2</a></li>-->
+            <!--<li><a class="drop" href="#">Level 2 + Drop</a>-->
+              <!--<ul>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+                <!--<li><a href="#">Level 3</a></li>-->
+              <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#">Level 2</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <li><a href="{% url 'ratelink' %}">Rate Movies</a></li>
+        <li><a href="{% url 'releaselink' %}">Upcoming Releases</a></li>
+        <!--<li><a href="#">Top </a></li>-->
+        <!--<li><a href="#">Contact</a></li>-->
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </div>
+   <!--################################################################################################ -->
+   <!--################################################################################################ -->
+   <!--################################################################################################ -->
+  <div id="pageintro" class="hoc clear">
+     <!--################################################################################################ -->
+    <div class="flexslider basicslider">
+      <ul class="slides">
+        <li>
+          <article>
+            <p>DC Extended Universe</p>
+            <h3 class="heading">Every Movie in the DC Extended Universe, Ranked</h3>
+            <!--<p></p>-->
+            <footer><a class="btn" href="https://www.thrillist.com/entertainment/nation/best-dc-comics-movies-ranked">Read More</a></footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>James Bond 25</p>
+            <h3 class="heading">Rami Malek joins cast and Phoebe Waller-Bridge to co-write</h3>
+            <!--<p>Integer molestie sapien ac enim praesent non justo phasellus quam nulla facilisi praesent massa lorem feugiat eget gravida vitae.</p>-->
+            <footer><a class="btn" href="https://www.bbc.com/news/entertainment-arts-48054674">Read More</a></footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>After Endgame</p>
+            <h3 class="heading">What's next for the Marvel Cinematic Universe?</h3>
+            <!--<p></p>-->
+            <footer><a class="btn" href="https://www.theguardian.com/film/2019/apr/30/avengers-endgame-marvel-cinematic-universe-film">Read More</a></footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>"RISE OF THE SKYWALKER"</p>
+            <h3 class="heading">Hiding The Title Worked For 'Avengers' But Backfired Badly For 'Star Wars'</h3>
+            <!--<p>Integer molestie sapien ac enim praesent non justo phasellus quam nulla facilisi praesent massa lorem feugiat eget gravida vitae.</p>-->
+            <footer><a class="btn" href="https://www.forbes.com/sites/scottmendelson/2019/04/30/avengers-endgame-star-wars-rise-of-skywalker-007-james-bond-disney-marvel-lucasfilm/#25385fd63470">Read More</a></footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!--temptemptemptemptemptemptemptemptemp-->
+
+<!--<img src="{% static 'images/home/starwars.jpg' %}" class="imglogo">-->
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <!--temptemptemptemptemptemptemptemptemptemp-->
+    <!-- ################################################################################################ -->
+  <!--</div>-->
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="group">
+      <div class="one_half first">
+        <!--<p class="font-xs">Tincidunt Sapien</p>-->
+        <h6 class="heading font-x3">Avengers: Endgame will mark Stan Lee's last Marvel movie cameo</h6>
+        <p>Whenever a new Marvel movie came out, fans had fun trying to spot Marvel Comics legend Stan Lee on the big screen. Lee guest-starred in over 20 Marvel movies -- as well as in various TV shows, video games and comics.
+        Lee has appeared as everything from a bus driver to a librarian alongside the comic book characters he created over the years.</p>
+        <p>But since Lee's death at age 95 in 2018, it's been unclear how many more posthumous cameos would be granted to the late, great comic book creator, until now. "It's his last one committed to film," Avengers: Endgame director Joe Russo told the media on press day in Los Angeles Saturday
+        </p>
+        <footer><a href="https://www.cnet.com/news/avengers-endgame-will-mark-stan-lees-last-marvel-movie-cameo/">Read More &raquo;</a></footer>
+      </div>
+      <div class="one_half"><a href="#"><img src="{% static 'images/home/Stan-Lee.jpg' %}" alt=""></a></div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded" style="background-image:url('{% static 'images/home/phantom.jpg' %}');">
+  <div class="hoc split clear">
+    <section> 
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <h6 class="heading">LATEST</h6>
+        <p>STAR WARS: RISE OF SKYWALKER</p>
+      </div>
+      <div class="group">
+        <article class="one_half first">
+          <h4 class="heading font-x1">HOW THE RISE OF SKYWALKER TRAILER REFERENCES THE PHANTOM MENACE</h4>
+          <p>The new teaser trailer for Star Wars: The Rise of Skywalker contains more surprises than just the Emperor’s spine-chilling cackle. It also has a pair of references to Episode I: The Phantom Menace, and we don’t mean a Jar Jar Binks cameo.</p>
+          <footer><a class="btn" href="https://www.ign.com/articles/2019/04/14/star-wars-how-the-rise-of-skywalker-trailer-references-the-phantom-menace">Read More &raquo;</a></footer>
+        </article>
+        <article class="one_half">
+          <h4 class="heading font-x1">Palpatine Returns to Rule in Star Wars' 9th Film 'The Rise of Skywalker'</h4>
+          <p>The ninth film in the original Star Wars saga will be called The Rise of Skywalker, and will feature the return of the evil emperor Palpatine to threaten the young heroine Rey and the Resistance, Walt Disney Co revealed on Friday.</p>
+          <footer><a class="btn" href="https://www.news18.com/news/movies/evil-emperor-palpatine-returns-to-star-wars-with-rise-of-skywalker-watch-video-2100889.html">Read More &raquo;</a></footer>
+        </article>
+      </div>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">2019 Most Anticipated Movies</h6>
+      <p>This year has already made its mark from Captian Marvel, Shazam, and US . Check out the Most Anticipated Movies yet to Come</p>
+    </div>
+    <div class="group elements">
+      <article class="one_quarter first"><a href="https://movies.disney.com/aladdin-2019"><img src="{% static 'images/home/aladdin.jpg' %}" alt=""></a>
+        <div class="txtwrap">
+          <h4 class="heading">Aladdin</h4>
+          <p>Young Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie.<br><br><br><br><br><br></p>
+          <footer><a href="https://movies.disney.com/aladdin-2019">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_quarter"><a href="https://www.johnwick.movie/"><img src="{% static 'images/home/johnwick.jpg' %}" alt=""></a>
+        <div class="txtwrap">
+          <h4 class="heading">John Wick: Chapter 3 – Parabellum</h4>
+          <p>Legendary hit man John Wick must fight his way out of New York when a $14 million contract on his life makes him the target of the world's top assassins.The series began in 2014.</p>
+          <footer><a href="https://www.johnwick.movie/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_quarter"><a href="https://www.foxmovies.com/movies/dark-phoenix"><img src="{% static 'images/home/dark.jpg' %}" alt=""></a>
+        <div class="txtwrap">
+          <h4 class="heading">Dark Phoenix</h4>
+          <p>The X-Men face their most formidable and powerful foe when one of their own, Jean Grey, starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed when she's hit by a mysterious cosmic force.</p>
+          <footer><a href="https://www.foxmovies.com/movies/dark-phoenix">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_quarter"><a href="https://www.shaftmovie.com/"><img src="{% static 'images/home/shaft.jpg' %}  " alt=""></a>
+        <div class="txtwrap">
+          <h4 class="heading">Shaft</h4>
+          <p>When his best friend dies under mysterious circumstances, an FBI cyber security expert joins forces with his father -- the legendary cop John Shaft -- to scour the streets of Harlem, N.Y., and uncover the truth.</p>
+          <footer><a href="https://www.shaftmovie.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay coloured" style="background-image:url('{% static 'images/home/avatar2.jpg' %}');">
+  <figure class="hoc container clear">
+    <!-- ################################################################################################ -->
+    <figcaption class="sectiontitle">
+      <h6 class="heading">Cameron's epic science fiction film was delayed</h6>
+      <p>'Avatar 2' Teases Time-Jump For Its Plot; Sequel Will Be Released In December 2020</p>
+    </figcaption>
+    <ul class="nospace group">
+      <li class="one_quarter first"><a href="http://www.avatarmovie.com/index.html"><img src="{% static 'images/home/av1.jpg' %}" alt=""></a></li>
+      <li class="one_quarter"><a href="http://www.avatarmovie.com/video.html"><img src="{% static 'images/home/av2.jpg' %}" alt=""></a></li>
+      <li class="one_quarter"><a href="http://www.avatarmovie.com/images.html"><img src="{% static 'images/home/av3.jpg' %}" alt=""></a></li>
+      <li class="one_quarter"><a href="http://www.avatarmovie.com/news.html"><img src="{% static 'images/home/av4.jpg' %}" alt="" style="width:100%;height:127px"></a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </figure>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">upcoming april releases</h6>
+      <p>Movies for April</p>
+    </div>
+    <div class="group elements">
+      <article class="one_third first">
+        <figure><a href="https://www.thecurseoflallorona.com/"><img src="{% static 'images/home/lorona.jpg' %}" alt=""></a>
+          <figcaption>
+            <time datetime="2045-04-19T08:15+00:00"><strong>19</strong> <em>Apr</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">The Curse of La Llorona Movie</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>The Curse of La Llorona release date is set for Friday, April 19, 2019. This will be a Nationwide in theaters release.</p>
+          <footer><a href="https://www.thecurseoflallorona.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="https://www.marvel.com/movies/avengers-endgame"><img src="{% static 'images/home/endgamep.jpg' %}" alt=""></a>
+          <figcaption>
+            <time datetime="2045-04-26T08:15+00:00"><strong>26</strong> <em>Apr</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Avengers: Endgame</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Avengers: Endgame release date is set for Friday, April 26, 2019. This will be a Nationwide in theaters release.<br><br></p>
+          <footer><a href="https://www.marvel.com/movies/avengers-endgame">Read More &raquo;</a></footer>
+        </div>
+      </article>
+      <article class="one_third">
+        <figure><a href="https://www.godzillamovie.com/"><img src="{% static 'images/home/godzilla.jpg' %}" alt=""></a>
+          <figcaption>
+            <time datetime="2045-05-31T08:15+00:00"><strong>31</strong> <em>May</em></time>
+          </figcaption>
+        </figure>
+        <div class="txtwrap">
+          <h4 class="heading">Godzilla: King of the Monsters</h4>
+          <ul class="nospace meta">
+            <!--<li>by <a href="#">Admin</a></li>-->
+            <!--<li>in <a href="#">Category Name</a></li>-->
+          </ul>
+          <p>Godzilla: King of the Monsters release date is set for Friday, May 31, 2019. This will be a Nationwide in theaters release. </p>
+          <footer><a href="https://www.godzillamovie.com/">Read More &raquo;</a></footer>
+        </div>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Footer Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/welcome/bvs.jpg' %}');background-repeat: no-repeat;
+  background-size: 100% 800px;">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div class="one_quarter first">
+        <h6 class="heading">movie-station</h6>
+        <p>Discover top rated and trending movies.</p>
+        <!--<p>Aliquam suspendisse elit quisque et cursus nulla aenean tincidunt massa condimentum.</p>-->
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Social</h6>
+        <nav>
+          <ul class="nospace">
+            <li><a href="{% url 'homelink' %}"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="{% url 'homelink' %}">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Terms</a></li>
+            <li><a href="https://www.cbsinteractive.com/legal/cbsi/privacy-policy/highlights">Privacy</a></li>
+            <li><a href="https://www.imdb.com/conditions?ref_=ft_cou">Cookies</a></li>
+            <li><a href="https://www.amazon.com/b/?&node=5160028011">Disclaimer</a></li>
+          </ul>
+        </nav>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-dribble" href="https://in.pinterest.com/"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="faicon-linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-google-plus" href="https://aboutme.google.com/u/0/"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="faicon-vk" href="https://vk.com/"><i class="fa fa-vk"></i></a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Formation</h6>
+        <article>
+          <h2 class="nospace font-x1"><a href="{% url 'homelink' %}">Movie-Station</a></h2>
+          <time class="font-xs" datetime="2019-04-16">Tuesday, 16<sup>th</sup> April 2019</time>
+          <p>Found in 2019 for Providing Informations From the Filmverse.</p>
+        </article>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Other Links</h6>
+        <ul class="nospace linklist">
+          <li><a href="https://www.imdb.com/search/title?genres=drama&groups=top_250&sort=user_rating,desc">IMDb "Top 250" Movies</a></li>
+          <li><a href="https://www.imdb.com/search/title?num_votes=100000,&sort=user_rating,desc&title_type=tv_series&">IMDb Top Rated TV Series</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/world/">All Time Biggest Grosser in Box Office</a></li>
+          <li><a href="https://www.boxofficemojo.com/alltime/weekends/">First Weekend Box Office</a></li>
+        </ul>
+      </div>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2019 - All Rights Reserved - <a href="{% url 'homelink' %}">Movie-Station</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Footer Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.flexslider-min.js' %}"></script>
+</body>
+</html>
